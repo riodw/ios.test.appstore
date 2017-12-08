@@ -58,7 +58,7 @@
 		D7F809AA1F0AF99D003E0102 = {
 			isa = PBXGroup;
 			children = (
-				D7F809B51F0AF99D003E0102 /* Project-1 */,
+				D7F809B51F0AF99D003E0102 /* Appstore */,
 				D7F809B41F0AF99D003E0102 /* Products */,
 				4A2A15AE8B1CEF6ED39E1215 /* Frameworks */,
 				7486DF96AFAE86724EBC0244 /* Pods */,
@@ -73,7 +73,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7F809B51F0AF99D003E0102 /* Project-1 */ = {
+		D7F809B51F0AF99D003E0102 /* Appstore */ = {
 			isa = PBXGroup;
 			children = (
 				D7F809B61F0AF99D003E0102 /* AppDelegate.swift */,
@@ -82,7 +82,7 @@
 				D7F809BF1F0AF99D003E0102 /* LaunchScreen.storyboard */,
 				D7F809C21F0AF99D003E0102 /* Info.plist */,
 			);
-			path = "Project-1";
+			path = Appstore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VQK2KEKWF;
-				INFOPLIST_FILE = "Project-1/Info.plist";
+				INFOPLIST_FILE = Appstore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medtrics.appstore;
@@ -343,7 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VQK2KEKWF;
-				INFOPLIST_FILE = "Project-1/Info.plist";
+				INFOPLIST_FILE = Appstore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medtrics.appstore;
