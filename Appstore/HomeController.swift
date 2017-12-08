@@ -14,7 +14,7 @@ class FeaturedAppsController: UICollectionViewController, UICollectionViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView?.backgroundColor = .white
+        collectionView?.backgroundColor = .red
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
     }
     
@@ -24,9 +24,13 @@ class FeaturedAppsController: UICollectionViewController, UICollectionViewDelega
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 30
     }
 }
+
+// https://www.youtube.com/watch?v=Ko9oNhlTwH0&list=PL0dzCUj1L5JEXct3-OV6itP7Kz3tRDmma
+// https://youtu.be/Ko9oNhlTwH0?t=9m32s
+//collectionView
 
 
 class CategoryCell: UICollectionViewCell {
@@ -40,6 +44,6 @@ class CategoryCell: UICollectionViewCell {
     }
     
     func setupViews() {
-        
+        backgroundColor = .black
     }
 }
