@@ -78,19 +78,32 @@ class AppCell: UICollectionViewCell {
     
     let imageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "rio")
+        iv.image = #imageLiteral(resourceName: "frozen")
         iv.contentMode = .scaleAspectFill
         iv.layer.cornerRadius = 16
         iv.layer.masksToBounds = true
         return iv
     }()
     
+    let nameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Disney Build It: Frozen"
+        label.font = UIFont.systemFont(ofSize: 13)
+        label.numberOfLines = 2
+        return label
+    }()
+    
     func setupViews() {
         addSubview(imageView)
+        addSubview(nameLabel)
         
-        imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.width)
+        nameLabel.frame = CGRect(x: 0, y: frame.width + 2, width: frame.width, height: 40)
     }
 }
+
+
+
 
 
 
