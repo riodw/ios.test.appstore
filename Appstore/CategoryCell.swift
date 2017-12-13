@@ -59,6 +59,10 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
         return CGSize(width: 100, height: frame.height)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, 14, 0, 14)
+    }
+    
 }
 
 
