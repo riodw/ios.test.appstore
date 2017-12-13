@@ -27,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        window?.rootViewController = UINavigationController(rootViewController: HomeController())
         
-        print("test2")
         return true
     }
     
