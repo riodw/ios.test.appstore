@@ -24,7 +24,7 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         
-        collectionView.backgroundColor = .blue
+        collectionView.backgroundColor = .clear
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         return collectionView
@@ -33,7 +33,7 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     private let cellId = "appCellId"
     
     func setupViews() {
-        backgroundColor = .black
+        backgroundColor = .clear
         
         addSubview(appsCollectionView)
         
@@ -56,7 +56,7 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: frame.height)
+        return CGSize(width: 100, height: frame.height)
     }
     
 }
@@ -72,7 +72,22 @@ class AppCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    let imageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = #imageLiteral(resourceName: "rio")
+        iv.contentMode = .scaleAspectFill
+        iv.layer.cornerRadius = 16
+        iv.layer.masksToBounds = true
+        return iv
+    }()
+    
     func setupViews() {
-        backgroundColor = .red
+        addSubview(imageView)
+        
+        imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
     }
 }
+
+
+
+
