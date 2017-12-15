@@ -17,7 +17,13 @@ class FeaturedAppsController: UICollectionViewController, UICollectionViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        appCategories = AppCategory.sampleAppCategories()
+//        appCategories = AppCategory.sampleAppCategories()
+        
+        AppCategory.fetchFeaturedApps { (appCategories) in
+            self.appCategories = appCategories
+            
+            self.collectionView?.reloadData()
+        }
         
         collectionView?.backgroundColor = .white
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
@@ -42,6 +48,5 @@ class FeaturedAppsController: UICollectionViewController, UICollectionViewDelega
     }
 }
 
-// https://www.youtube.com/watch?v=Ko9oNhlTwH0&list=PL0dzCUj1L5JEXct3-OV6itP7Kz3tRDmma
-// https://youtu.be/Ko9oNhlTwH0?t=9m32s
+// https://www.youtube.com/watch?v=Ko9oNhlTwH0&list=PL0dzCUj1L5JEXct3-OV6itP7Kz3tRDmmak
 
